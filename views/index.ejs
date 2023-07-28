@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="../public/css/styles.css" type="text/css" />
+  </head>
+  <body>
+    <div id="main">
+      <h3 style="text-align: center; color: black">
+        Student Registration Form
+      </h3>
+      <form method="post" action="/">
+        <div class="inputb">
+          <label for="rno">Roll Number</label>
+          <input type="number" id="rno" name="rno" required />
+        </div>
+        <div class="inputb">
+          <label for="sname">Student Name</label>
+          <input type="text" id="sname" name="sname" required />
+        </div>
+
+        <div class="inputb">
+          <label for="sage">Student Age</label>
+          <input type="text" id="sage" name="sage" required />
+        </div>
+
+        <div class="inputb">
+          <label for="sdept">Department</label>
+          <input type="text" id="sdept" name="sdept" />
+        </div>
+
+        <div class="inputb">
+          <label for="stotal">Total</label>
+          <input type="text" id="stotal" name="stotal" />
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+      <button><a>Get Student Details</a></button>
+      <button><a>Get Student Details by Rno</a></button>
+    </div>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #424242;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      #main {
+        background-color: white;
+        margin-top: 100px;
+        width: 200px;
+        border-radius: 5%;
+        box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.9);
+      }
+
+      .inputb {
+        margin: 10px;
+      }
+
+      button {
+        width: 100px;
+        margin: 10px;
+      }
+    </style>
+  </body>
+</html>
